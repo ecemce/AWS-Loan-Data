@@ -4,8 +4,6 @@ from pyspark.sql.functions import *
 from pyspark.sql.session import SparkSession
 
 spark = SparkSession.builder.appName("LoanProcessor").getOrCreate()
-#pathway = "s3://loans3bucket/"
-#pathway = "/home/ecem/Desktop/aws-spark/"
 
 
 main_df =spark.read.format("csv").option("header","true").option("inferSchema","true").load("s3://loans3bucket/loan.csv")
