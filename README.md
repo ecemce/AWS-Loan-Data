@@ -23,15 +23,18 @@ The applicant  deliver a system built on Amazon Web Services using PySpark , Pyt
 * 1- Given this yearly income ranges, <40k, 40-60k, 60-80k, 80-100k and >100k. Generate a report that contains average loan amount and average term of loan in months based on these 5 income ranges. Result file should be like “income range, avg amount, avg term”
 * 2- In loans which are fully funded and loan amounts greater than $1000, what is the fully paid amount rate for every loan grade of the borrowers.Result file should be like “credit grade,fully paid amount rate”, eg.“A,%95”
 
-* Bucket name:loanS3bucket AWS Region:eu-central-1 and then create a bucket
+
+
+## All Steps
+* Bucket name:loanS3bucket , AWS Region:eu-central-1 and then create a bucket
 ![github-small](https://github.com/ecemce/AWS-Loan-Data/blob/main/docs/s3bucket.png)
 
-* Kİnesis > Data streams > Create data stream 
-Delivery Stream Name : Loan Stream Source: Direct put or other source
+* Kinesis > Data streams > Create data stream 
+Delivery Stream Name : LoanStream , Source: Direct put or other source
 ![github-small](https://github.com/ecemce/AWS-Loan-Data/blob/main/docs/kinesis.png)
 
 
-* Destination:AmazonS3 S3 bucket:loanS3bucket
+* Destination:AmazonS3 , S3 bucket:loanS3bucket
 ![github-small](https://github.com/ecemce/AWS-Loan-Data/blob/main/docs/kinesis2.png)
 
 * s3 compression:GZIP 
