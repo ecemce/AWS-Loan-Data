@@ -1,8 +1,8 @@
 import boto3
 import pandas as pd
 
-aws_access_key_id= "AKIAS2U7TRLJDWNHXDFJ"
-aws_secret = "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"
+aws_access_key_id= "***********"
+aws_secret = "***************"
 
 aws = boto3.client("firehose",region_name = "eu-central-1",
                   aws_access_key_id = aws_access_key_id,
