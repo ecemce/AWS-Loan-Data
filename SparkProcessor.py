@@ -1,5 +1,4 @@
 
-from re import A
 from pyspark.sql.functions import *
 from pyspark.sql.session import SparkSession
 
