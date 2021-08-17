@@ -27,7 +27,7 @@ The applicant  deliver a system built on Amazon Web Services using PySpark , Pyt
 Spark application code that fulfills the required conditions in the report.
 
 ## Transfer_data.py
-Writes csv data in gzip format to s3 bucket using firehose client.
+Writes csv data in gzip format to s3 bucket using firehose client .
 
 
 ## All Steps
